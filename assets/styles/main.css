@@ -13,6 +13,7 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 @font-face {
     font-family: "irsans-b";
     src: url(../fonts/irsans-b.eot);
@@ -21,6 +22,7 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 @font-face {
     font-family: "irsans-l";
     src: url(../fonts/irsans-l.eot);
@@ -29,6 +31,7 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 @font-face {
     font-family: "Yekan";
     src: url(../fonts/Iransans.eot);
@@ -37,6 +40,7 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 @font-face {
     font-family: "irsans-m";
     src: url(../fonts/irsans-m.eot);
@@ -45,6 +49,7 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 @font-face {
     font-family: "irsans-u";
     src: url(../fonts/irsans-u.eot);
@@ -53,10 +58,539 @@ Version : 0.1
     font-style: normal;
     unicode-range: U+0600 -U+06 FF;  /* For Persian character range */
 }
+
 /******************** Font /********************/
 /******************** General Styles /********************/
 body {
     font-family: irsans;
     text-align: right;
+    direction: rtl !important;
+    font-size: 16px;
+    line-height: 32px;
+    color: #7d93b2;
+    background-color: #fafcff;
+    font-weight: 200;
 }
+
 /******************** General Styles /********************/
+/******************** Single Post Styles /********************/
+.single-article {
+    padding: 30px 0;
+    transition: all .3s;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(125, 147, 178, .25);
+    transition: all .3s;
+    padding: 20px;
+    margin-top: 32px;
+}
+
+.article .aritlce-header {
+    position: relative;
+}
+
+.article .article-category {
+    font-size: 16px;
+    color: #ff5c72;
+    float: left;
+    font-weight: 700;
+    margin: 0;
+    line-height: 16px;
+}
+
+.article .article-date {
+    margin: 0;
+    font-size: 14px;
+    color: #bed0e9;
+    line-height: 14px;
+}
+
+.article .article-title {
+    margin-top: 42px;
+    margin-bottom: 48px;
+}
+
+.article .article-socials {
+    position: relative;
+    text-align: center;
+    margin: 23px 0 0 0;
+}
+
+.article .article-social:first-child {
+    margin-left: 20px;
+}
+
+.article .article-social {
+    display: inline-block;
+    margin: 0 0 0 32px;
+    color: #7d93b2;
+}
+
+.article .article-social i {
+    margin-right: 8px;
+}
+
+.article .article-social-likes {
+    float: left;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.article .article-social-like {
+    color: #ff5c72;
+    font-weight: 700;
+}
+
+.article .article-content {
+    margin-bottom: 50px;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article p {
+    text-align: justify;
+    line-height: 36px;
+    font-weight: 400;
+    color: #7d93b2;;
+    text-align: justify;
+}
+
+.link.link--gray:hover {
+    color: #ff5c72;
+}
+
+.article p.small-text {
+    color: #4c6280;
+    line-height: 36px;
+}
+
+.article hr {
+    margin: 0;
+    background-color: #e5f0ff;
+    color: #e5f0ff;
+    border: none;
+    height: 2px;
+}
+
+.article h4 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #4c6280;
+    margin: 0;
+}
+
+.article hr + h4 {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.article blockquote {
+    padding: 20px 30px 20px 5px;
+    position: relative;
+    margin: 0;
+    font-weight: 500;
+    color: #4c6280;
+    font-style: italic;
+    text-align: left;
+}
+
+.article blockquote:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #ff5c72;
+    width: 4px;
+    top: 0;
+    right: 0;
+}
+
+.article .article-ul-title {
+    padding-right: 32px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+    color: #4c6280;
+}
+
+.article ul {
+    padding-left: 32px;
+    list-style: disc;
+}
+
+.article ul > li {
+    line-height: 30px;
+    font-weight: 400;
+    color: #7d93b2;
+    text-align: justify;
+}
+
+.article .tags {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.article .tags .tags__tag {
+    padding: 7px 8px;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    box-shadow: none;
+    height: 32px;
+}
+
+.article .site-btn {
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all .3s;
+    height: auto;
+    cursor: pointer;
+}
+
+.article .site-btn.site-btn--light {
+    background-color: transparent;
+    border: 1px solid #ceddf2;
+    color: #7d93b2;
+}
+
+.article .article-social-right {
+    float: left;
+}
+
+.article-comments {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #e5f0ff;
+}
+
+.article-comments .article-box-comment {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 68px 0;
+    width: 100%;
+    position: relative;
+}
+
+.article-box-content {
+    width: 100%;
+    position: relative;
+}
+
+.article-box-comment .article-box-avatar {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 8px 15px 0 rgba(125, 147, 178, .25);
+    margin-left: 32px;
+    overflow: hidden;
+}
+
+.comment-author-name {
+    font-weight: 400;
+    color: #4c6280;
+    float: right;
+}
+
+.comment-date {
+    color: #bed0e9;
+    float: left;
+    font-size: 14px;
+}
+
+.comment-text {
+    margin-top: 33px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    display: block;
+    text-align: justify;
+    color: #7d93b2;
+}
+
+.comment-controls {
+    position: relative;
+}
+
+.comment-reply {
+    background: transparent;
+    float: left;
+    border: none;
+    padding: 0;
+    color: #7d93b2;
+    transition: all .3s;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.comment-reply i {
+    margin-right: 8px;
+}
+
+.comment-like {
+    float: right;
+}
+
+.comments-reply {
+    list-style: none;
+    margin-right: 120px;
+}
+
+.comment {
+
+}
+
+.comment h4 {
+    margin-bottom: 22px;
+    color: #4c6280;
+    font-size: 18px;
+}
+
+.form-comment {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form_group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form_form-group {
+    width: calc(33.3333% - 11px);
+    display: inline-block;
+}
+
+.form__form-group {
+    width: 100%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.form_group .form-label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #4c6280;
+}
+
+.form_group {
+    width: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+}
+
+.form_group .form-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: #4c6280;
+    font-size: 13px;
+    border: 2px solid #ceddf2;
+}
+
+.form_group i {
+    position: absolute;
+    left: 7px;
+    top: 12px;
+}
+
+.form_group svg {
+    position: absolute;
+    left: 7px;
+    top: 12px;
+}
+
+.form-label span {
+    color: #ff5c72;
+}
+
+.form-textarea {
+    height: 96px;
+    min-height: 96px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #ceddf2;
+    color: #4c6280;
+}
+
+.btn-accent {
+    background: #ff5c72;
+    color: #fff;
+    box-shadow: 0 20px 30px rgba(125, 147, 178, .3);
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .3s;
+    height: auto;
+    cursor: pointer;
+}
+
+.form-input:hover {
+    border-color: #bed0e9;
+}
+
+.box-title {
+    color: #4c6280;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+ul.popular-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-items > li {
+    margin: 15px 0;
+}
+
+.popular-items > li > img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.popular-items > li > a {
+    margin: auto 0 auto 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: all .3s;
+    color: #4c6280;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.popular-items > li > a:hover {
+    color: #ff5c72;
+
+}
+
+.tags-list {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.tags-list li {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ceddf2;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    box-shadow: none;
+    height: 32px;
+
+}
+
+.tags-list li a {
+    text-decoration: none;
+    color: #7d93b2;
+    padding: 7px 8px;
+
+}
+
+.select-cats ul {
+    position: relative;
+    padding: 2px;
+    background-color: #fff;
+    border: 2px solid #ceddf2;
+    border-radius: 5px;
+}
+.select-cats ul:hover svg {
+    color: #ff5c72;
+    cursor: pointer;
+
+}
+.select-cats ul:hover i {
+    color: #ff5c72;
+    cursor: pointer;
+}
+.select-cats ul svg {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.select-cats ul i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.select-cats ul li.option {
+    background-color: #fff;
+
+}
+
+.select-cats ul li.option a {
+    font-size: 14px;
+    line-height: 1.7;
+    transition: all .3s;
+    color: #4c6280;
+    text-decoration: none;
+}
+
+.select-cats ul li.option:hover a {
+    color: #ff5c72;
+
+}
+
+.select-cats ul li.option:hover {
+    background-color: #fff;
+}
+
+.select-cats ul li.option {
+    z-index: 1;
+    padding: 5px;
+    list-style: none;
+}
+
+.select-cats ul.closed li.option {
+    display: none;
+}
+
+.select-cats ul.closed li:first-child {
+    display: block;
+}
+
+.select-cats ul li {
+    cursor: default;
+}
+
+/******************** Single Post Styles /********************/
